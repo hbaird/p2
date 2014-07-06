@@ -22,7 +22,7 @@
 		<p class='password'>
 			<?php echo $password ?></p>
 		
-		<form>
+		<form action='index.php' method='POST'>
 			<p class='options'>
 			
 				<label for='number_of_words'># of Words</label>

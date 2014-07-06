@@ -1,4 +1,5 @@
- <?php
+<?php
+
 
 $words = array('cat', 'dog', 'bird', 'fish',
 				'flower','lizard','frog','worm',
@@ -6,14 +7,15 @@ $words = array('cat', 'dog', 'bird', 'fish',
 				'pond','swan','butterfly','mushroom',
 				'leaf','house','broom','deer',);
 
-$rand_keys = array_rand($words, 4);
+$rand_keys = array_rand($words, $_POST['number_of_words']);
 
 $password = '';
 
 $i = 0; 
 
 foreach ($rand_keys as $rand_key => $word) {
-	
+
+
 	if ($i == 0) {
 		$password .= "$words[$word]";
 	}
@@ -21,9 +23,23 @@ foreach ($rand_keys as $rand_key => $word) {
 		$password .= "-$words[$word]";
 	}
 
+
 	$i++;
 }
 
+$add_number = isset($_POST['add_number']) ? $_POST['add_number'] : '';
 
+if ($add_number == 'on') {
+	$number = rand(0,100);
+	$password .= "$number";
+}
 
+$symbols = array('!', '@', '#', '$', '%', '^', '&', '*');
 
+$rand_symbol = array_rand($symbols, 1);
+
+$add_symbol = isset($_POST['add_symbol']) ? $_POST['add_symbol'] : '';
+if ($add_symbol == 'on') {
+
+	$password .= "$symbols[$rand_symbol]";	
+}
