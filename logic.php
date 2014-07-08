@@ -1,5 +1,10 @@
 <?php
 
+$number_of_words = isset($_POST['number_of_words']) ? $_POST['number_of_words'] : '';
+
+if ($number_of_words == NULL) {
+	$_POST['number_of_words'] = 4;
+}
 
 $words = array('cat', 'dog', 'bird', 'fish',
 				'flower','lizard','frog','worm',
@@ -45,7 +50,7 @@ if ($add_symbol == 'on') {
 }
 
 $uppercase_first = isset($_POST['uppercase_first']) ? $_POST['uppercase_first'] : '';
-if ($uppercase_first = 'on'){
+if ($uppercase_first == 'on'){
 
 	$password = ucfirst($password);
 }
