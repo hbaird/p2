@@ -43,3 +43,9 @@ if ($add_symbol == 'on') {
 
 	$password .= "$symbols[$rand_symbol]";	
 }
+
+$uppercase_first = isset($_POST['uppercase_first']) ? $_POST['uppercase_first'] : '';
+if ($uppercase_first = 'on'){
+
+	$password = ucfirst($password);
+}

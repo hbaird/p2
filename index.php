@@ -34,6 +34,9 @@
 				<br>
 				<input type='checkbox' name='add_symbol' id='add_symbol' > 
 				<label for='add_symbol'>Add a symbol</label>
+				<br>
+				<input type='checkbox' name='uppercase_first' id='uppercase_first' > 
+				<label for='uppercase_first'>Capitalize the first letter</label>
 			</p>
 		
 			<input type='submit' class='btn btn-default' value='Gimme Another'>
