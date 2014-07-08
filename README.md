@@ -2,7 +2,8 @@
 
 <h1>Live URL</h1>
 <http://p2-heather.gopagoda.com>
-Due to issues with Pagoda, the site is does not display the 
+<br>
+Due to issues with Pagoda, the site does not display the 
 index page or application, despite successful pushes to git and pagoda.
 
 <h1>Description</h1>
