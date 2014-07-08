@@ -1,7 +1,7 @@
 <h1>Heather Baird - Project 1</h1>
 
 <h1>Live URL</h1>
-<http://p2-heather.gopagoda.com>
+<http://p2-baird.gopagoda.com>
 <br>
 Due to issues with Pagoda, the site does not display the 
 index page or application, despite successful pushes to git and pagoda.
